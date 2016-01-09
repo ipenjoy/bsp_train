@@ -1,0 +1,31 @@
+这是一个开源软件sdparm，请重写其makefile，实现目标sdparm和clean的编译。
+实例如下：
+penjoy@ubuntu:sdparm$ make
+DEP tmp/src/sdparm.d
+DEP tmp/src/sdparm_data.d
+DEP tmp/src/sdparm_data_vendor.d
+DEP tmp/src/sdparm_access.d
+DEP tmp/src/sdparm_vpd.d
+DEP tmp/src/sdparm_cmd.d
+DEP tmp/lib/sg_lib.d
+DEP tmp/lib/sg_lib_data.d
+DEP tmp/lib/sg_cmds_basic.d
+DEP tmp/lib/sg_cmds_mmc.d
+DEP tmp/lib/sg_pt_common.d
+DEP tmp/lib/sg_pt_linux.d
+DEPS tmp/.depend
+CC tmp/src/sdparm.o
+CC tmp/src/sdparm_data.o
+CC tmp/src/sdparm_data_vendor.o
+CC tmp/src/sdparm_access.o
+CC tmp/src/sdparm_vpd.o
+CC tmp/src/sdparm_cmd.o
+CC tmp/lib/sg_lib.o
+CC tmp/lib/sg_lib_data.o
+CC tmp/lib/sg_cmds_basic.o
+CC tmp/lib/sg_cmds_mmc.o
+CC tmp/lib/sg_pt_common.o
+CC tmp/lib/sg_pt_linux.o
+CC tmp/sdparm
+penjoy@ubuntu:sdparm$ make clean
+rm -f tmp/sdparm  tmp/src/*.o tmp/src/*.d tmp/lib/*.o tmp/lib/*.d 
